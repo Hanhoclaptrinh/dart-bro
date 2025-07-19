@@ -1,3 +1,6 @@
+// lazy initialization
+late String? txt;
+
 void main() {
   // primitive data type
   int age = 18;
@@ -26,4 +29,12 @@ void main() {
   y = 1.5; // ok
   print(y.runtimeType); // double
   // y = "Bro"; // error
+
+  // null safety
+  int? a;
+  a = null;
+  print(a.runtimeType); // Null
+
+  txt = "lazy initialization";
+  print(txt);
 }
