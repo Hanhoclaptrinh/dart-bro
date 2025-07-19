@@ -34,7 +34,11 @@ void main() {
   int? a;
   a = null;
   print(a.runtimeType); // Null
+  a ??= 10; // if a is null, a = 10
+  print(a); // 10
+  // a ??= 20; // a also be 10
+  // print(a); // 10
 
   txt = "lazy initialization";
-  print(txt);
+  print(txt is String); // check type (is or isn't)
 }
